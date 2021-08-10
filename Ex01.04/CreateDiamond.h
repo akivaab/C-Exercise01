@@ -2,6 +2,10 @@
 #include <stdbool.h>
 
 /**
+ * @file Create and Print Diamond
+ */
+
+/**
  * @brief Whitespace character
  */
 const char SPACE = ' ';

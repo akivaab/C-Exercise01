@@ -58,7 +58,7 @@ bool isOdd(int number)
 }
 
 
-/** All in one function :
+/* All in one function :
 
 void createDiamond(int diamondBaseSize)
 {
