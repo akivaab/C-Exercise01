@@ -58,8 +58,7 @@ bool isOdd(int number)
 }
 
 
-
-/* All in one function:
+/** All in one function :
 
 void createDiamond(int diamondBaseSize)
 {
@@ -79,7 +78,7 @@ void createDiamond(int diamondBaseSize)
             }
             printf("\n");
         }
-        
+
         numSpaces = 1;
         numStars = baseSize - 2;
         for ( ; numStars >= 1; numSpaces++, numStars -= 2)
