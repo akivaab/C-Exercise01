@@ -2,6 +2,12 @@
 
 bool validateID(int id)
 {
+    int sumOfDigits = luhnAlgorithm(id);
+    return sumOfDigits % 10 == 0;
+}
+
+int luhnAlgorithm(int id)
+{
     int sumOfDigits = 0;
     int lastDigit;
 
@@ -12,16 +18,28 @@ bool validateID(int id)
 
         if (i % 2 == 0)
         {
-            lastDigit = lastDigit * 2;
-
-            if (lastDigit > 9)
-            {
-                lastDigit = lastDigit - 9;
-            }
+            lastDigit = multiplyByTwo(lastDigit);
         }
 
         sumOfDigits += lastDigit;
     }
 
-    return sumOfDigits % 10 == 0;
+    return sumOfDigits;
+}
+
+int multiplyByTwo(int number)
+{
+    number = number * 2;
+
+    return subtractByNineIfDoubleDigits(number);
+}
+
+int subtractByNineIfDoubleDigits(int number)
+{
+    if (number > 9)
+    {
+        number = number - 9;
+    }
+
+    return number;
 }
