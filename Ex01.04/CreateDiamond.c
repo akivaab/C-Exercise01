@@ -57,6 +57,8 @@ bool isOdd(int number)
     return number % 2 == 1;
 }
 
+
+
 /* All in one function:
 
 void createDiamond(int diamondBaseSize)
