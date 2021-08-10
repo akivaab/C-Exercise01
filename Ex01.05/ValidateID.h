@@ -11,7 +11,7 @@
  * @param id is the given ID number
  * 
  * @return whether the ID is valid or not
-*/
+ */
 bool validateID(int id);
 
 /**
@@ -20,7 +20,7 @@ bool validateID(int id);
  * @param id is the given ID number
  * 
  * @return the algorithm result
-*/
+ */
 int luhnAlgorithm(int id);
 
 /**
@@ -29,7 +29,7 @@ int luhnAlgorithm(int id);
  * @param number to be doubled
  * 
  * @return the result 
-*/
+ */
 int multiplyByTwo(int number);
 
 /**
@@ -38,5 +38,5 @@ int multiplyByTwo(int number);
  * @param number to be potentially subtracted by nine
  * 
  * @return the sum of the number's digits 
-*/
+ */
 int subtractByNineIfDoubleDigits(int number);
