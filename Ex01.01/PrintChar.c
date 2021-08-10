@@ -3,14 +3,14 @@
 
 char receiveInput()
 {
-    char usersChar;
-    scanf_s(" %c", &usersChar, 1);
-    return usersChar;
+    char ch;
+    scanf_s(" %c", &ch, 1);
+    return ch;
 }
 
-void printChar(char character)
+void printChar(char ch)
 {
-    printf("%c\n", character);
+    printf("%c\n", ch);
 }
 
 void printContinuously()
