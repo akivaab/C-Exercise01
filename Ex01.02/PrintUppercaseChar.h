@@ -5,14 +5,14 @@
  */
 
  /**
-  * @brief accepts character from user
+  * @brief Accepts character from user.
   *
   * @return inputted character
   */
 char receiveInput();
 
 /**
- * @brief converts given character to uppercase
+ * @brief Converts given character to uppercase.
  * 
  * @param character to convert
  * 
@@ -21,13 +21,13 @@ char receiveInput();
 char convertToUppercase(char character);
 
 /**
- * @brief print a given character
+ * @brief Print a given character.
  *
  * @param character to print
  */
 void printChar(char character);
 
 /**
- * @brief print inputted characters continuously
+ * @brief Print inputted characters continuously.
  */
 void printContinuously();
