@@ -1,6 +1,6 @@
 #include "PrintChar.h"
 
-int main()
+int main(void)
 {
     printContinuously();
 

@@ -1,6 +1,6 @@
 #include "NextToEdges.h"
 
-int main()
+int main(void)
 {
     inputContinuously();
 

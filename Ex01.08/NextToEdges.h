@@ -60,17 +60,17 @@ void setNextLargest(int number);
  * 
  * @return the number inputted by the user 
  */
-int receiveInput();
+int receiveInput(void);
 
 /**
  * @brief Recieves input from the user in a loop.
  */
-void inputContinuously();
+void inputContinuously(void);
 
 /**
  * @brief Receives the first two numbers inputted (there must be at least two values for the program to work).
  */
-void receiveTwoNumbersInput();
+void receiveTwoNumbersInput(void);
 
 /**
  * @brief Compares a number to the global values to determine if it should replace one of them.

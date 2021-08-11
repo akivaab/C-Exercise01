@@ -9,7 +9,7 @@ void printCharacterNumTimes(char character, int num)
     }
 }
 
-void printNewline()
+void printNewline(void)
 {
     printf("\n");
 }
