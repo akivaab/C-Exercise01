@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _STRING_LENGTH_
+#define _STRING_LENGTH_
 #include <stdlib.h>
 
 /**
@@ -13,3 +14,5 @@
  * @return size of given string 
  */
 size_t strlen(const char* stringStart);
+
+#endif

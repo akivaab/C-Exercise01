@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _VALIDATE_ID_
+#define _VALIDATE_ID_
 #include <stdbool.h>
 
 /**
@@ -40,3 +41,5 @@ int multiplyByTwo(int number);
  * @return the sum of the number's digits 
  */
 int subtractByNineIfDoubleDigits(int number);
+
+#endif

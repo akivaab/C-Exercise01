@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _PRINT_UPPERCASE_CHAR_
+#define _PRINT_UPPERCASE_CHAR_
 
 /**
  * @file Print Uppercase Characters
@@ -31,3 +32,5 @@ void printChar(char character);
  * @brief Print inputted characters continuously.
  */
 void printContinuously();
+
+#endif

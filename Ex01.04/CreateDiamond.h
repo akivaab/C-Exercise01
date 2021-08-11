@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _CREATE_DIAMOND_
+#define _CREATE_DIAMOND_
 #include <stdbool.h>
 
 /**
@@ -54,3 +55,5 @@ void createDiamond(int diamondBaseSize);
  * @param number is the number being checked
  */
 bool isOdd(int number);
+
+#endif

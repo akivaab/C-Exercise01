@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _FIX_ID_
+#define _FiX_ID_
 
 /**
  * @file Find ID Check-Sum
@@ -47,3 +48,4 @@ int subtractByNineIfDoubleDigits(int number);
  */
 int getCheckSum(int sum);
 
+#endif

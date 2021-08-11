@@ -1,6 +1,10 @@
-#pragma once
+#ifndef _NEXT_TO_EDGES_
+#define _NEXT_TO_EDGES_
+
 /**
  * @file Find 2nd-Largest and 2nd-Smallest Values
+ * 
+ * @note Does not ignore duplicate numbers.
  */
 
 /**
@@ -74,3 +78,5 @@ void receiveTwoNumbersInput();
  * @param number to evaluate
  */
 void compare(int number);
+
+#endif
