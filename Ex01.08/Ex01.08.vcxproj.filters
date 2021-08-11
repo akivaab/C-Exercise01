@@ -18,6 +18,9 @@
     <ClCompile Include="NextToEdges.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Program.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NextToEdges.h">
