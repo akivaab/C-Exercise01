@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="NextToEdges.c" />
+    <ClCompile Include="Program.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NextToEdges.h" />
