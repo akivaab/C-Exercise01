@@ -43,7 +43,9 @@ int subtractByNineIfDoubleDigits(int number);
 
 /**
  * @brief Calculate the check-sum of a certain sum.
+ * 
  * @param sum is the sum of the digit of the ID number
+ * 
  * @return the check-sum
  */
 int getCheckSum(int sum);

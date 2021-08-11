@@ -5,11 +5,11 @@
  * @file Print Uppercase Characters
  */
 
- /**
-  * @brief Accepts character from user.
-  *
-  * @return inputted character
-  */
+/**
+ * @brief Accepts character from user.
+ *
+ * @return inputted character
+ */
 char receiveInput();
 
 /**

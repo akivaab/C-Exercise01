@@ -2,7 +2,7 @@
 
 int main()
 {
-    continuousInput();
+    inputContinuously();
 
     return 0;
 }

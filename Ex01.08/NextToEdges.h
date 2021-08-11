@@ -65,7 +65,7 @@ int receiveInput();
 /**
  * @brief Recieves input from the user in a loop.
  */
-void continuousInput();
+void inputContinuously();
 
 /**
  * @brief Receives the first two numbers inputted (there must be at least two values for the program to work).

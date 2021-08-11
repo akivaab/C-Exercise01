@@ -28,7 +28,7 @@ int receiveInput()
     return usersNumber;
 }
 
-void continuousInput()
+void inputContinuously()
 {
     receiveTwoNumbersInput();
     int usersNumber = receiveInput();
