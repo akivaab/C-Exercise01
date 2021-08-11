@@ -20,7 +20,6 @@ const char STAR = '*';
  * @brief Prints a character to stdout a certain number of times. 
  * 
  * @param character is the character being printed
- * 
  * @param num is the number of times the character will be printed
  */
 void printCharacterNumTimes(char character, int num);
