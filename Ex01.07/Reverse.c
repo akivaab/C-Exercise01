@@ -26,8 +26,14 @@ void continuousInput()
     Node node = createNode(usersNumber, NULL, NULL);
     List list = createList(&node, &node);
 
+    usersNumber = receiveInput();
     while (usersNumber != 0)
     {
-        Node node = createNode(usersNumber, NULL, NULL);
+        Node newNode = createNode(usersNumber, list.last, NULL);
+        node.next = &newNode;
+        list.last = &newNode;
+        node = newNode;
     }
+
+
 }
