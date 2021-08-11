@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _PRINT_CHAR_H_
+#define _PRINT_CHAR_H_
 
 /**
  * @file Print Characters
@@ -22,3 +23,5 @@ void printChar(char character);
  * @brief Print inputted characters continuously.
  */
 void printContinuously();
+
+#endif
