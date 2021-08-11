@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "FixID.h"
 
-int main()
+int main(void)
 {
     int checkSum = fixID(12345678);
     printf("%d", checkSum);

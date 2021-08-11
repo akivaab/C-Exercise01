@@ -10,7 +10,7 @@
  *
  * @return inputted character
  */
-char receiveInput();
+char receiveInput(void);
 
 /**
  * @brief Converts given character to uppercase.
@@ -31,6 +31,6 @@ void printChar(char character);
 /**
  * @brief Print inputted characters continuously.
  */
-void printContinuously();
+void printContinuously(void);
 
 #endif

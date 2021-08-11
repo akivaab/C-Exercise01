@@ -10,7 +10,7 @@
  *
  * @return inputted character
  */
-char receiveInput();
+char receiveInput(void);
 
 /**
  * @brief Print a given character.
@@ -22,6 +22,6 @@ void printChar(char character);
 /**
  * @brief Print inputted characters continuously.
  */
-void printContinuously();
+void printContinuously(void);
 
 #endif

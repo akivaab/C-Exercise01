@@ -1,6 +1,6 @@
 #include "PrintUppercaseChar.h"
 
-int main()
+int main(void)
 {
     printContinuously();
 

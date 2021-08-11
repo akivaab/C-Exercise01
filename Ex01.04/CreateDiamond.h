@@ -27,7 +27,7 @@ void printCharacterNumTimes(char character, int num);
 /**
  * @brief Prints a newline.
  */
-void printNewline();
+void printNewline(void);
 
 /**
  * @brief Creates the top half and base of the diamond.

@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "StringLength.h"
 
-int main()
+int main(void)
 {
     size_t stringLength = strlen("hello there sir");
-    printf("%d", stringLength);
+    printf("%zu", stringLength);
 
     return 0;
 }

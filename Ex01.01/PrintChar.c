@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "PrintChar.h"
 
-char receiveInput()
+char receiveInput(void)
 {
     char usersChar;
     scanf_s(" %c", &usersChar, 1);
@@ -13,7 +13,7 @@ void printChar(char character)
     printf("%c\n", character);
 }
 
-void printContinuously()
+void printContinuously(void)
 {
     char usersChar = receiveInput();
     while (usersChar != 'q' && usersChar != 'Q')
