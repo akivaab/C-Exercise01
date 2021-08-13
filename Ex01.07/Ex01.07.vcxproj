@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Program.c" />
     <ClCompile Include="Reverse.c" />
   </ItemGroup>
   <ItemGroup>

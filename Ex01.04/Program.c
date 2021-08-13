@@ -1,6 +1,6 @@
 int main()
 {
-    createDiamond(11);
+    createDiamond(9);
 
     return 0;
 }

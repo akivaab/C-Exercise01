@@ -4,7 +4,7 @@
 /**
  * @file Find 2nd-Largest and 2nd-Smallest Values
  * 
- * @note Does not ignore duplicate numbers.
+ * @note Does NOT ignore duplicate numbers.
  */
 
 /**
@@ -58,9 +58,9 @@ void setNextLargest(int number);
 /**
  * @brief Receives input from the user.
  * 
- * @return the number inputted by the user 
+ * @return the integer inputted by the user 
  */
-int receiveInput(void);
+int readInt(void);
 
 /**
  * @brief Recieves input from the user in a loop.
