@@ -21,7 +21,7 @@ void setNextLargest(int number)
     g_next_largest = number;
 }
 
-int receiveInput(void)
+int readInt(void)
 {
     int usersNumber;
     scanf_s(" %d", &usersNumber);
@@ -31,21 +31,21 @@ int receiveInput(void)
 void inputContinuously(void)
 {
     receiveTwoNumbersInput();
-    int usersNumber = receiveInput();
+    int usersNumber = readInt();
     while (usersNumber != 0)
     {
         compare(usersNumber);
-        usersNumber = receiveInput();
+        usersNumber = readInt();
     }
 
-    printf("The next to smallest value is: %d\n", g_next_smallest);
-    printf("The next to largest value is: %d\n", g_next_largest);
+    printf_s("The next to smallest value is: %d\n", g_next_smallest);
+    printf_s("The next to largest value is: %d\n", g_next_largest);
 }
 
 void receiveTwoNumbersInput(void)
 {
-    int usersNumber1 = receiveInput();
-    int usersNumber2 = receiveInput();
+    int usersNumber1 = readInt();
+    int usersNumber2 = readInt();
 
     if (usersNumber1 < usersNumber2)
     {

@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include "PrintUppercaseChar.h"
 
-char receiveInput(void)
+char readChar(void)
 {
     char usersChar;
     scanf_s(" %c", &usersChar, 1);
@@ -16,17 +16,17 @@ char convertToUppercase(char character)
 
 void printChar(char character)
 {
-    printf("%c\n", character);
+    printf_s("%c\n", character);
 }
 
 void printContinuously(void)
 {
-    char usersChar = receiveInput();
+    char usersChar = readChar();
     char capitalizedChar = convertToUppercase(usersChar);
     while (capitalizedChar != 'Q')
     {
         printChar(capitalizedChar);
-        usersChar = receiveInput();
+        usersChar = readChar();
         capitalizedChar = convertToUppercase(usersChar);
     }
 }

@@ -2,55 +2,58 @@
 #define _REVERSE_H_
 
 /**
- * @brief A node which has a value and points to nodes before and after it. 
+ * @brief A node which has contains an integer value and points to the node before it. 
  */
 typedef struct DoubleLinkedNode_t
 {
     int value;
-    Node *previous;
-    Node *next;
+    struct Node *previous;
 } Node;
+
+/**
+ * @brief A list of nodes, with a pointer to the end of the list.
+ */
+typedef struct DoubleLinkedList_t
+{
+    Node *last;
+} List;
 
 /**
  * @brief Initialize a node.
  * 
  * @param value is the integer value the node represents
  * @param previousNode points to the last node
- * @param nextNode points to the following node
  * 
  * @return the initialized node
  */
-Node createNode(int value, Node* previousNode, Node* nextNode);
-
-/**
- * @brief A list of nodes, with pointers to the beginning and end of the list.
- */
-typedef struct DoubleLinkedList_t
-{
-    Node *head;
-    Node *last;
-} List;
+Node createNode(int value, Node *previousNode);
 
 /**
  * @brief Initialize a list.
  * 
- * @param head points to the beginning of the list
  * @param last points to the end of the list
  * 
  * @return the initialized list
  */
-List createList(Node* head, Node* last);
+List createList(Node *last);
 
 /**
  * @brief Receives user input.
  * 
  * @return the integer inputted
 */
-int receiveInput();
+int readInt(void);
 
 /**
  * @brief Receive user input continuously.
 */
-void continuousInput();
+void inputContinuously(void);
+
+/**
+ * @brief Prints contents of list in reverse.
+ * 
+ * @param list of nodes whose values will be printed
+*/
+void printInReverse(List list);
 
 #endif 

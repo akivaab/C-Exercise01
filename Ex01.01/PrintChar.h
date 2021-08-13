@@ -10,7 +10,7 @@
  *
  * @return inputted character
  */
-char receiveInput(void);
+char readChar(void);
 
 /**
  * @brief Print a given character.

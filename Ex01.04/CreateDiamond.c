@@ -11,7 +11,7 @@ void printCharacterNumTimes(char character, int num)
 
 void printNewline(void)
 {
-    printf("\n");
+    printf_s("\n");
 }
 
 
@@ -48,7 +48,7 @@ void createDiamond(int diamondBaseSize)
     }
     else
     {
-        printf("Cannot create diamond with an even-sized base.");
+        printf_s("Cannot create diamond with an even-sized base.");
     }
 }
 
