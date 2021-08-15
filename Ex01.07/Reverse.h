@@ -4,7 +4,7 @@
 /**
  * @brief A node which has contains an integer value and points to the node before it. 
  */
-typedef struct DoubleLinkedNode_t
+typedef struct Node_t
 {
     int value;
     struct Node *previous;
@@ -13,7 +13,7 @@ typedef struct DoubleLinkedNode_t
 /**
  * @brief A list of nodes, with a pointer to the end of the list.
  */
-typedef struct DoubleLinkedList_t
+typedef struct LinkedList_t
 {
     Node *last;
 } List;
