@@ -3,8 +3,12 @@
 
 int main(void)
 {
-    int checkSum = fixID(12345678);
-    printf("%d", checkSum);
+    int idNumber;
+    printf_s("enter the first 8 digits of an ID number:\n");
+    scanf_s(" %d", &idNumber);
+
+    int checkSum = FixID(idNumber);
+    printf_s("%d", checkSum);
 
     return 0;
 }

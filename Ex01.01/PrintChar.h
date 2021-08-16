@@ -10,18 +10,18 @@
  *
  * @return inputted character
  */
-char readChar(void);
+char ReadChar(void);
 
 /**
  * @brief Print a given character.
  *
  * @param character to print
  */
-void printChar(char character);
+void PrintChar(char character);
 
 /**
  * @brief Print inputted characters continuously.
  */
-void printContinuously(void);
+void PrintContinuously(void);
 
 #endif

@@ -12,7 +12,7 @@
  *
  * @return the check-sum that will validate the ID number
  */
-int fixID(int id);
+int FixID(int id);
 
 /**
  * @brief Perfroms the Luhn algorithm on an ID.
@@ -21,7 +21,7 @@ int fixID(int id);
  *
  * @return the algorithm result
  */
-int luhnAlgorithm(int id);
+int LuhnAlgorithm(int id);
 
 /**
  * @brief Multiplies a number by two.
@@ -30,7 +30,7 @@ int luhnAlgorithm(int id);
  *
  * @return the result
  */
-int multiplyByTwo(int number);
+int MultiplyByTwo(int number);
 
 /**
  * @brief Subtracts any double-digit number by nine, effectively adding its digits.
@@ -39,7 +39,7 @@ int multiplyByTwo(int number);
  *
  * @return the sum of the number's digits
  */
-int subtractByNineIfDoubleDigits(int number);
+int SubtractByNineIfDoubleDigits(int number);
 
 /**
  * @brief Calculate the check-sum of a certain sum.
@@ -48,6 +48,6 @@ int subtractByNineIfDoubleDigits(int number);
  * 
  * @return the check-sum
  */
-int getCheckSum(int sum);
+int GetCheckSum(int sum);
 
 #endif

@@ -22,37 +22,37 @@ const char STAR = '*';
  * @param character is the character being printed
  * @param num is the number of times the character will be printed
  */
-void printCharacterNumTimes(char character, int num);
+void PrintCharacterNumTimes(char character, int num);
 
 /**
  * @brief Prints a newline.
  */
-void printNewline(void);
+void PrintNewline(void);
 
 /**
  * @brief Creates the top half and base of the diamond.
  * 
  * @param baseSize is the number of stars forming the base
  */
-void createDiamondTop(int baseSize);
+void CreateDiamondTop(int baseSize);
 
 /**
  * @brief Creates the bottom half of the diamond. 
  * 
  * @param baseSize is the number of stars forming the base
  */
-void createDiamondBottom(int baseSize);
+void CreateDiamondBottom(int baseSize);
 
 /**
  * @brief Creates the diamond.
  */
-void createDiamond(int diamondBaseSize);
+void CreateDiamond(int diamondBaseSize);
 
 /**
  * @brief Checks if a given number is odd.
  * 
  * @param number is the number being checked
  */
-bool isOdd(int number);
+bool IsOdd(int number);
 
 #endif

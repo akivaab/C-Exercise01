@@ -1,41 +1,41 @@
 #include <stdio.h>
 #include "Reverse.h"
 
-Node createNode(int value, Node *previousNode)
+Node CreateNode(int value, Node *previousNode)
 {
     Node node = { .value = value, .previous = previousNode };
     return node;
 }
 
-List createList(Node *last)
+List CreateList(Node *last)
 {
     List list = { .last = last };
     return list;
 }
 
-int readInt(void)
+int ReadInt(void)
 {
     int usersNumber;
     scanf_s(" %d", &usersNumber);
     return usersNumber;
 }
 
-void inputContinuously(void)
+void InputContinuously(void)
 {
-    List list = createList(NULL);
+    List list = CreateList(NULL);
 
-    int usersNumber = readInt();
+    int usersNumber = ReadInt();
     while (usersNumber != 0)
     {
-        Node newNode = createNode(usersNumber, list.last);
+        Node newNode = CreateNode(usersNumber, list.last);
         list.last = &newNode;
-        usersNumber = readInt();
+        usersNumber = ReadInt();
     }
 
-    printInReverse(list);
+    PrintInReverse(list);
 }
 
-void printInReverse(List list)
+void PrintInReverse(List list)
 {
     for (Node *node = list.last; node != NULL; node = node->previous)
     {

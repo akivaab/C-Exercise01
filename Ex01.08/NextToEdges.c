@@ -1,87 +1,87 @@
 #include <stdio.h>
 #include "NextToEdges.h"
 
-void setSmallest(int number)
+void SetSmallest(int number)
 {
     g_smallest = number;
 }
 
-void setNextSmallest(int number)
+void SetNextSmallest(int number)
 {
     g_next_smallest = number;
 }
 
-void setLargest(int number)
+void SetLargest(int number)
 {
     g_largest = number;
 }
 
-void setNextLargest(int number)
+void SetNextLargest(int number)
 {
     g_next_largest = number;
 }
 
-int readInt(void)
+int ReadInt(void)
 {
     int usersNumber;
     scanf_s(" %d", &usersNumber);
     return usersNumber;
 }
 
-void inputContinuously(void)
+void InputContinuously(void)
 {
-    receiveTwoNumbersInput();
-    int usersNumber = readInt();
+    ReceiveTwoNumbersInput();
+    int usersNumber = ReadInt();
     while (usersNumber != 0)
     {
-        compare(usersNumber);
-        usersNumber = readInt();
+        Compare(usersNumber);
+        usersNumber = ReadInt();
     }
 
     printf_s("The next to smallest value is: %d\n", g_next_smallest);
     printf_s("The next to largest value is: %d\n", g_next_largest);
 }
 
-void receiveTwoNumbersInput(void)
+void ReceiveTwoNumbersInput(void)
 {
-    int usersNumber1 = readInt();
-    int usersNumber2 = readInt();
+    int usersNumber1 = ReadInt();
+    int usersNumber2 = ReadInt();
 
     if (usersNumber1 < usersNumber2)
     {
-        setSmallest(usersNumber1);
-        setNextSmallest(usersNumber2);
-        setLargest(usersNumber2);
-        setNextLargest(usersNumber1);
+        SetSmallest(usersNumber1);
+        SetNextSmallest(usersNumber2);
+        SetLargest(usersNumber2);
+        SetNextLargest(usersNumber1);
     }
     else
     {
-        setSmallest(usersNumber2);
-        setNextSmallest(usersNumber1);
-        setLargest(usersNumber1);
-        setNextLargest(usersNumber2);
+        SetSmallest(usersNumber2);
+        SetNextSmallest(usersNumber1);
+        SetLargest(usersNumber1);
+        SetNextLargest(usersNumber2);
     }
 }
 
-void compare(int number)
+void Compare(int number)
 {
     if (number <= g_smallest)
     {
-        setNextSmallest(g_smallest);
-        setSmallest(number);
+        SetNextSmallest(g_smallest);
+        SetSmallest(number);
     }
     else if (number < g_next_smallest)
     {
-        setNextSmallest(number);
+        SetNextSmallest(number);
     }
 
     if (number >= g_largest)
     {
-        setNextLargest(g_largest);
-        setLargest(number);
+        SetNextLargest(g_largest);
+        SetLargest(number);
     }
     else if (number > g_next_largest)
     {
-        setNextLargest(number);
+        SetNextLargest(number);
     }
 }

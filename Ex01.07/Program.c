@@ -2,7 +2,8 @@
 
 int main(void)
 {
-    inputContinuously();
+    printf_s("enter integers, enter 0 to stop:\n");
+    InputContinuously();
 
     return 0;
 }

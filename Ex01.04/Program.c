@@ -1,6 +1,12 @@
-int main()
+#include <stdio.h>
+//#include "CreateDiamond.h"
+
+int main(void)
 {
-    createDiamond(9);
+    int diamondBaseSize;
+    printf_s("enter a positive, odd integer:\n");
+    scanf_s(" %d", &diamondBaseSize);
+    CreateDiamond(diamondBaseSize);
 
     return 0;
 }

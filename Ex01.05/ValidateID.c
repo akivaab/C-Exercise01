@@ -1,12 +1,12 @@
 #include "ValidateID.h"
 
-bool validateID(int id)
+bool ValidateID(int id)
 {
-    int sumOfDigits = luhnAlgorithm(id);
+    int sumOfDigits = LuhnAlgorithm(id);
     return sumOfDigits % 10 == 0;
 }
 
-int luhnAlgorithm(int id)
+int LuhnAlgorithm(int id)
 {
     int sumOfDigits = 0;
     int lastDigit;
@@ -18,7 +18,7 @@ int luhnAlgorithm(int id)
 
         if (i % 2 == 0)
         {
-            lastDigit = multiplyByTwo(lastDigit);
+            lastDigit = MultiplyByTwo(lastDigit);
         }
 
         sumOfDigits += lastDigit;
@@ -27,14 +27,14 @@ int luhnAlgorithm(int id)
     return sumOfDigits;
 }
 
-int multiplyByTwo(int number)
+int MultiplyByTwo(int number)
 {
     number = number * 2;
 
-    return subtractByNineIfDoubleDigits(number);
+    return SubtractByNineIfDoubleDigits(number);
 }
 
-int subtractByNineIfDoubleDigits(int number)
+int SubtractByNineIfDoubleDigits(int number)
 {
     if (number > 9)
     {

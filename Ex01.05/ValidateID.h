@@ -13,7 +13,7 @@
  * 
  * @return whether the ID is valid or not
  */
-bool validateID(int id);
+bool ValidateID(int id);
 
 /**
  * @brief Perfroms the Luhn algorithm on an ID.
@@ -22,7 +22,7 @@ bool validateID(int id);
  * 
  * @return the algorithm result
  */
-int luhnAlgorithm(int id);
+int LuhnAlgorithm(int id);
 
 /**
  * @brief Multiplies a number by two.
@@ -31,7 +31,7 @@ int luhnAlgorithm(int id);
  * 
  * @return the result 
  */
-int multiplyByTwo(int number);
+int MultiplyByTwo(int number);
 
 /**
  * @brief Subtracts any double-digit number by nine, effectively adding its digits.
@@ -40,6 +40,6 @@ int multiplyByTwo(int number);
  * 
  * @return the sum of the number's digits 
  */
-int subtractByNineIfDoubleDigits(int number);
+int SubtractByNineIfDoubleDigits(int number);
 
 #endif

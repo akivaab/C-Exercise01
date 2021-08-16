@@ -1,12 +1,12 @@
 #include "FixID.h"
 
-int fixID(int id)
+int FixID(int id)
 {
-    int sumOfDigits = luhnAlgorithm(id);
-    return getCheckSum(sumOfDigits);
+    int sumOfDigits = LuhnAlgorithm(id);
+    return GetCheckSum(sumOfDigits);
 }
 
-int luhnAlgorithm(int id)
+int LuhnAlgorithm(int id)
 {
     int sumOfDigits = 0;
     int lastDigit;
@@ -18,7 +18,7 @@ int luhnAlgorithm(int id)
 
         if (i % 2 == 0)
         {
-            lastDigit = multiplyByTwo(lastDigit);
+            lastDigit = MultiplyByTwo(lastDigit);
         }
 
         sumOfDigits += lastDigit;
@@ -27,24 +27,29 @@ int luhnAlgorithm(int id)
     return sumOfDigits;
 }
 
-int multiplyByTwo(int number)
+int MultiplyByTwo(int number)
 {
-    number = number * 2;
+    //number = number * 2;
 
-    return subtractByNineIfDoubleDigits(number);
+    return SubtractByNineIfDoubleDigits(number * 2);
 }
 
-int subtractByNineIfDoubleDigits(int number)
+int SubtractByNineIfDoubleDigits(int number)
 {
+    /*
     if (number > 9)
     {
         number = number - 9;
     }
 
     return number;
+    */
+
+    return (number > 9 ? number - 9 : number);
+
 }
 
-int getCheckSum(int sum)
+int GetCheckSum(int sum)
 {
     int sumOnesValue = sum % 10;
     return 10 - sumOnesValue;
