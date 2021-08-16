@@ -1,24 +1,25 @@
 #include <stdio.h>
 #include "PrintChar.h"
 
-char readChar(void)
+char ReadChar(void)
 {
     char usersChar;
     scanf_s(" %c", &usersChar, 1);
     return usersChar;
 }
 
-void printChar(char character)
+void PrintChar(char character)
 {
     printf_s("%c\n", character);
 }
 
-void printContinuously(void)
+void PrintContinuously(void)
 {
-    char usersChar = readChar();
+    printf_s("enter a capital or lowercase letter:\n");
+    char usersChar = ReadChar();
     while (usersChar != 'q' && usersChar != 'Q')
     {
-        printChar(usersChar);
-        usersChar = readChar();
+        PrintChar(usersChar);
+        usersChar = ReadChar();
     }
 }

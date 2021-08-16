@@ -26,7 +26,7 @@ typedef struct LinkedList_t
  * 
  * @return the initialized node
  */
-Node createNode(int value, Node *previousNode);
+Node CreateNode(int value, Node *previousNode);
 
 /**
  * @brief Initialize a list.
@@ -35,25 +35,25 @@ Node createNode(int value, Node *previousNode);
  * 
  * @return the initialized list
  */
-List createList(Node *last);
+List CreateList(Node *last);
 
 /**
  * @brief Receives user input.
  * 
  * @return the integer inputted
 */
-int readInt(void);
+int ReadInt(void);
 
 /**
  * @brief Receive user input continuously.
 */
-void inputContinuously(void);
+void InputContinuously(void);
 
 /**
  * @brief Prints contents of list in reverse.
  * 
  * @param list of nodes whose values will be printed
 */
-void printInReverse(List list);
+void PrintInReverse(List list);
 
 #endif 

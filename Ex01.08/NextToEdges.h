@@ -32,51 +32,51 @@ int g_largest;
  * 
  * @param number is the value being assigned to g_smallest
  */
-void setSmallest(int number);
+void SetSmallest(int number);
 
 /**
  * @brief Sets the g_next_smallest variable.
  * 
  * @param number is the value being assigned to g_next_smallest
  */
-void setNextSmallest(int number);
+void SetNextSmallest(int number);
 
 /**
  * @brief Sets the g_largest variable.
  * 
  * @param number is the value being assigned to g_largest
  */
-void setLargest(int number);
+void SetLargest(int number);
 
 /**
  * @brief Sets the g_next_largest variable.
  * 
  * @param number is the value being assigned to g_next_largest
  */
-void setNextLargest(int number);
+void SetNextLargest(int number);
 
 /**
  * @brief Receives input from the user.
  * 
  * @return the integer inputted by the user 
  */
-int readInt(void);
+int ReadInt(void);
 
 /**
  * @brief Recieves input from the user in a loop.
  */
-void inputContinuously(void);
+void InputContinuously(void);
 
 /**
  * @brief Receives the first two numbers inputted (there must be at least two values for the program to work).
  */
-void receiveTwoNumbersInput(void);
+void ReceiveTwoNumbersInput(void);
 
 /**
  * @brief Compares a number to the global values to determine if it should replace one of them.
  * 
  * @param number to evaluate
  */
-void compare(int number);
+void Compare(int number);
 
 #endif

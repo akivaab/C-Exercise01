@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    printContinuously();
+    PrintContinuously();
 
     return 0;
 }

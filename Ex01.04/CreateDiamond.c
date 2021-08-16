@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "CreateDiamond.h"
 
-void printCharacterNumTimes(char character, int num)
+void PrintCharacterNumTimes(char character, int num)
 {
     for (int i = 0; i < num; i++)
     {
@@ -9,42 +9,42 @@ void printCharacterNumTimes(char character, int num)
     }
 }
 
-void printNewline(void)
+void PrintNewline(void)
 {
     printf_s("\n");
 }
 
 
-void createDiamondTop(int baseSize)
+void CreateDiamondTop(int baseSize)
 {
     int numSpaces = baseSize / 2;
     int numStars = 1;
     for ( ; numStars <= baseSize; numSpaces--, numStars += 2)
     {
-        printCharacterNumTimes(SPACE, numSpaces);
-        printCharacterNumTimes(STAR, numStars);
-        printNewline();
+        PrintCharacterNumTimes(SPACE, numSpaces);
+        PrintCharacterNumTimes(STAR, numStars);
+        PrintNewline();
     }
 }
 
-void createDiamondBottom(int baseSize)
+void CreateDiamondBottom(int baseSize)
 {
     int numSpaces = 1;
     int numStars = baseSize - 2;
     for ( ; numStars >= 1; numSpaces++, numStars -= 2)
     {
-        printCharacterNumTimes(SPACE, numSpaces);
-        printCharacterNumTimes(STAR, numStars);
-        printNewline();
+        PrintCharacterNumTimes(SPACE, numSpaces);
+        PrintCharacterNumTimes(STAR, numStars);
+        PrintNewline();
     }
 }
 
-void createDiamond(int diamondBaseSize)
+void CreateDiamond(unsigned int diamondBaseSize)
 {
-    if (isOdd(diamondBaseSize))
+    if (IsOdd(diamondBaseSize))
     {
-        createDiamondTop(diamondBaseSize);
-        createDiamondBottom(diamondBaseSize);
+        CreateDiamondTop(diamondBaseSize);
+        CreateDiamondBottom(diamondBaseSize);
     }
     else
     {
@@ -52,7 +52,7 @@ void createDiamond(int diamondBaseSize)
     }
 }
 
-bool isOdd(int number)
+bool IsOdd(int number)
 {
     return number % 2 == 1;
 }
